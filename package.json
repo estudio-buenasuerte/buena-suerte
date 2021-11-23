@@ -1,0 +1,53 @@
+{
+	"name": "buena-suerte",
+	"version": "0.0.1",
+	"description": "🤞 A small collection of convenient JavaScript utilities & helpers. Mostly for React/Next.js/Gatsby",
+	"main": "./src/index",
+	"scripts": {
+		"build:js": "babel src --out-dir lib",
+		"release": "rm -rf lib && npm run build:js && npm publish"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/estudio-buenasuerte/buena-suerte.git"
+	},
+	"keywords": [
+		"util",
+		"utils",
+		"utilities",
+		"dom",
+		"math",
+		"events",
+		"javascript"
+	],
+	"author": "Lucas Vocos <lucas@buena-suerte.studio> (https://buena-suerte.studio)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/estudio-buenasuerte/buena-suerte/issues"
+	},
+	"homepage": "https://github.com/estudio-buenasuerte/buena-suerte#readme",
+	"dependncies": {
+		"klaviyo-subscribe": "^1.0.0",
+		"lodash": "^4.17.21",
+		"react": "^17.0.2",
+		"shallowequal": "^1.1.0"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.16.0",
+		"@babel/core": "^7.16.0",
+		"@babel/plugin-proposal-class-properties": "^7.8.3",
+		"@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+		"@babel/plugin-syntax-dynamic-import": "^7.8.3",
+		"@babel/plugin-transform-object-assign": "^7.8.3",
+		"@babel/preset-env": "^7.8.4",
+		"@babel/preset-react": "^7.8.3",
+		"babel-eslint": "^10.1.0",
+		"eslint": "^6.8.0",
+		"eslint-plugin-react": "^7.27.1",
+		"node-gzip": "^1.1.2",
+		"node-sass": "^6.0.1"
+	},
+	"dependencies": {
+		"intersection-observer": "^0.12.0"
+	}
+}
