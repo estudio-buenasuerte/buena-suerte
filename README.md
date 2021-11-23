@@ -4,9 +4,7 @@
 
 ## Features
 
-- 🔬 Tiny (<850b gzipped)
-- 🚕 Convenient
-- 🌲 Tree-shakeable
+- 🤷 Dunno yet
 
 ## Installation
 
@@ -17,7 +15,7 @@ npm i buena-suerte
 ## Usage
 
 ```js
-import { useeInterval } from 'buena-suerte'
+import { useInterval } from 'buena-suerte'
 
 const [count, setCount] = useState(0);
 const [delay, setDelay] = useState(1000);
