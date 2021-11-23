@@ -1,6 +1,6 @@
 {
 	"name": "buena-suerte",
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"description": "🤞 A small collection of convenient JavaScript utilities & helpers. Mostly for React/Next.js/Gatsby",
 	"main": "./src/index",
 	"scripts": {
