@@ -1,8 +1,9 @@
 {
 	"name": "buena-suerte",
-	"version": "0.0.3",
+	"version": "0.0.01",
 	"description": "🤞 A small collection of convenient JavaScript utilities & helpers. Mostly for React/Next.js/Gatsby",
-	"main": "./src/index",
+	"main": "index.js",
+	"type": "module",
 	"scripts": {
 		"build:js": "babel src --out-dir lib",
 		"release": "rm -rf lib && npm run build:js && npm publish"
