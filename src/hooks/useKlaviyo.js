@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { email as emailRegex } from '../utils/emailRegex'
+import { default as emailRegex } from '../utils/emailRegex.js'
 import { subscribe } from 'klaviyo-subscribe'
 
 const useKlaviyo = klaviyoListId => {

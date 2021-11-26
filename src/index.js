@@ -1,17 +1,30 @@
 // Hooks
-export { default as useHover } from './hooks/useHover'
-export { default as useIntersection } from './hooks/useIntersection'
-export { default as useInterval } from './hooks/useInterval'
-export { default as useKlaviyo } from './hooks/useKlaviyo'
-export { default as useLockBodyScroll } from './hooks/useLockBodyScroll'
-export { default as useToggle } from './hooks/useToggle'
+import useHover from './hooks/useHover.js'
+import useIntersection from './hooks/useIntersection.js'
+import useInterval from './hooks/useInterval.js'
+import useKlaviyo from './hooks/useKlaviyo.js'
+import useLockBodyScroll from './hooks/useLockBodyScroll.js'
+import useToggle from './hooks/useToggle.js'
 
 // Utils
 // import dotEnv from './utils/dot-env'
-export { default as emailRegex } from './utils/emailRegex'
-export { default as isBrowser } from './utils/isBrowser'
-export { default as sanityImage } from './utils/sanityImage'
+import emailRegex from './utils/emailRegex.js'
+import isBrowser from './utils/isBrowser.js'
+import sanityImage from './utils/sanityImage.js'
 
-export const printMsg = function () {
+const printMsg = function () {
 	console.log('This is a message from the demo package')
+}
+
+export {
+	useHover,
+	useIntersection,
+	useInterval,
+	useKlaviyo,
+	useLockBodyScroll,
+	useToggle,
+	emailRegex,
+	isBrowser,
+	sanityImage,
+	printMsg
 }
