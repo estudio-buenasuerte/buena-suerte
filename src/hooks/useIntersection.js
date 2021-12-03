@@ -10,7 +10,7 @@ const intersectionOptions = {
 	defaultIntersecting: false,
 }
 
-export const useIntersection = (target, options = intersectionOptions, callback = () => {}) => {
+export default (target, options = intersectionOptions, callback = () => {}) => {
 	const { defaultIntersecting, once, ...opts } = options
 	const optsRef = useRef(opts)
 	const [intersecting, setIntersecting] = useState(defaultIntersecting === true)
