@@ -1,22 +1,22 @@
 {
 	"name": "buena-suerte",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "🤞 A small collection of convenient JavaScript utilities & helpers. Mostly for React/Next.js/Gatsby",
 	"main": "lib/index.js",
 	"source": "src/index.js",
 	"exports": {
 		".": {
-		  "browser": "./lib/index.modern.js",
-		  "umd": "./lib/index.umd.js",
-		  "import": "./lib/index.esm.js",
-		  "require": "./lib/index.js"
+			"browser": "./lib/index.modern.js",
+			"umd": "./lib/index.umd.js",
+			"import": "./lib/index.esm.js",
+			"require": "./lib/index.js"
 		}
 	},
 	"module": "lib/index.esm.js",
 	"unpkg": "lib/index.umd.js",
 	"scripts": {
 		"build": "microbundle build",
-    	"watch": "microbundle watch",
+		"watch": "microbundle watch",
 		"release": "rm -rf lib && npm run build && npm publish"
 	},
 	"repository": {
@@ -39,11 +39,10 @@
 	},
 	"homepage": "https://github.com/estudio-buenasuerte/buena-suerte#readme",
 	"dependencies": {
-		"core-js": "^3.19.1",
+		"core-js": "^3.19.2",
 		"intersection-observer": "^0.12.0",
 		"klaviyo-subscribe": "^1.0.0",
 		"lodash": "^4.17.21",
-		"react": "^17.0.2",
 		"shallowequal": "^1.1.0"
 	},
 	"devDependencies": {
@@ -57,10 +56,11 @@
 		"@babel/preset-env": "^7.16.4",
 		"@babel/preset-react": "^7.16.0",
 		"babel-eslint": "^10.1.0",
-		"eslint": "^6.8.0",
+		"eslint": "^8.3.0",
 		"eslint-plugin-react": "^7.27.1",
 		"microbundle": "^0.14.2",
 		"node-gzip": "^1.1.2",
-		"node-sass": "^6.0.1"
+		"node-sass": "^6.0.1",
+		"react": "^17.0.2"
 	}
 }
