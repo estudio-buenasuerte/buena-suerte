@@ -4,7 +4,7 @@ import 'intersection-observer'
 
 const intersectionOptions = {
 	root: undefined,
-	rootMargin: '50px',
+	rootMargin: '-100px 0 0 0',
 	threshold: '',
 	once: true,
 	defaultIntersecting: false,
@@ -32,10 +32,6 @@ export default (target, options = intersectionOptions, callback = () => {}) => {
 			return
 		}
 
-		if (once && intersectedRef.current) {
-			return
-		}
-
 		const observer = new IntersectionObserver(
 			entries => {
 				const entry = entries[entries.length - 1]
@@ -60,6 +56,11 @@ export default (target, options = intersectionOptions, callback = () => {}) => {
 		)
 
 		observer.observe(element)
+
+		if (once && intersectedRef.current) {
+			observer.unobserve(element)
+			return
+		}
 
 		return () => {
 			if (once && intersectedRef.current) {
