@@ -4,7 +4,7 @@ import 'intersection-observer'
 
 const intersectionOptions = {
 	root: undefined,
-	rootMargin: '-100px 0 0 0',
+	rootMargin: '-100px 0px 0px 0px',
 	threshold: '',
 	once: true,
 	defaultIntersecting: false,
