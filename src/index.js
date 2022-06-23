@@ -5,6 +5,7 @@ import useInterval from './hooks/useInterval.js'
 import useKlaviyo from './hooks/useKlaviyo.js'
 import useLockBodyScroll from './hooks/useLockBodyScroll.js'
 import useToggle from './hooks/useToggle.js'
+import usePrevious from './hooks/usePrevious.js'
 
 // Utils
 // import dotEnv from './utils/dot-env'
@@ -23,8 +24,9 @@ export {
 	useKlaviyo,
 	useLockBodyScroll,
 	useToggle,
+	usePrevious,
 	emailRegex,
 	isBrowser,
 	sanityImage,
-	printMsg
+	printMsg,
 }
