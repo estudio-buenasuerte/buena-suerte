@@ -1,8 +1,6 @@
-import map from 'lodash'
-
 const DEFAULT_PROPS = {
 	auto: 'format',
-	q: '75',
+	q: '100',
 }
 
 const sanityImageUrl = (src = '', props = {}) => {
@@ -11,7 +9,7 @@ const sanityImageUrl = (src = '', props = {}) => {
 		...props,
 	}
 
-	const query = map(updatedProps, (value, key) => `${key}=${value}`)
+	const query = Object.entries(updatedProps).map((value, key) => `${key}=${value}`)
 
 	return `${src}?${query.join('&')}`
 }
