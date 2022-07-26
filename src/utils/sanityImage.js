@@ -9,7 +9,7 @@ const sanityImageUrl = (src = '', props = {}) => {
 		...props,
 	}
 
-	const query = Object.entries(updatedProps).map((value, key) => `${key}=${value}`)
+	const query = Object.entries(updatedProps).map(value => `${value[0]}=${value[1]}`)
 
 	return `${src}?${query.join('&')}`
 }
